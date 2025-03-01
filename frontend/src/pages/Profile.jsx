@@ -55,12 +55,12 @@ const Profile = () => {
     <div className="min-h-screen bg-gray-100 p-6 relative">
       {/* Edit Profile Floating Button */}
       <DarkModeToggle/>
-      <button
-        className="absolute top-4 right-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
-        onClick={handleEditToggle}
-      >
+     
+      <button className="absolute top-4 right-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 z-50"
+       onClick={handleEditToggle}>
         Edit Profile
       </button>
+
 
       {/* Edit Profile Modal */}
       {isEditing && (
